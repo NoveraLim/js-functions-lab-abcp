@@ -1,12 +1,16 @@
 function happyHolidays(string) {
-  console.log('Happy Holidays!')
+  return happyHolidays('Happy holidays!')
+  expect (happyHolidays()).toEqual('Happy holidays!')
 }
 function happyHolidaysTo(string) {
-  console.log(`${Happyholidays}, ${name}!`)
+  return happyHolidaysTo('`Happy holidays, ${name}!`')
+  expect (happyHolidaysTo('Maria')).toEqual('Happy holidays, Maria!')
 }
 function happyHolidayTo(string) {
-  console.log(`Happy ${holiday}, ${name}!`)
+  return happyHolidayTo('`Happy ${holiday}, ${name}!`')
+  expect(happyHolidayTo('Independence Day', 'Maria')).toEqual('Happy Independence Day, Maria!')
 }
 function holidayCountdown(string) {
-  console.log(`It's ${days} days until ${holiday}!`)
+  return holidayCountdown('`It\s ${days} days until ${holiday}!`')
+  expect(holidayCountdown("Mother's Day", 20)).toEqual("It's 20 days until Mother's Day!")
 }
